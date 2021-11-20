@@ -1,5 +1,8 @@
+lipX=0;
+lipY=0;
+
 function preload(){
-lipstick=loadImage('https://i.postimg.cc/PxFvYgkv/l1.png')
+lipstick=loadImage('https://i.postimg.cc/PxFvYgkv/l1.png');
 }
 
 function setup(){
@@ -10,7 +13,7 @@ function setup(){
     video.hide();
 
     poseNet=ml5.poseNet(video,modelLoaded);
-    poseNet.on('pose', gotPoses)
+    poseNet.on('pose', gotPoses);
 }
 
 function draw(){
